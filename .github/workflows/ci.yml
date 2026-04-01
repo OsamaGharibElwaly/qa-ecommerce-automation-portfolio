@@ -40,11 +40,12 @@ jobs:
     env:
       BASE_URL: http://localhost:3001
       API_URL: http://localhost:5000/api
-      BROWSER: firefox
+      BROWSER: chrome
       HEADLESS: "true"
       FRONTEND_URL: http://localhost:3001
       TOKEN_TTL_SECONDS: "3600"
       MOCK_ORDER_FAILURE: "false"
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

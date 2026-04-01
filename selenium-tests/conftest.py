@@ -41,20 +41,28 @@ def driver():
         options = FirefoxOptions()
         if headless:
             options.add_argument("--headless")
-        web_driver = webdriver.Firefox(
-            service=FirefoxService(GeckoDriverManager().install()),
-            options=options,
-        )
+        try:
+            web_driver = webdriver.Firefox(
+                service=FirefoxService(GeckoDriverManager().install()),
+                options=options,
+            )
+        except Exception:
+            # Fallback to Selenium Manager if GitHub API limits driver downloads.
+            web_driver = webdriver.Firefox(options=options)
     else:
         options = ChromeOptions()
         options.add_argument("--window-size=1440,900")
         options.add_argument("--disable-gpu")
         if headless:
             options.add_argument("--headless=new")
-        web_driver = webdriver.Chrome(
-            service=ChromeService(ChromeDriverManager().install()),
-            options=options,
-        )
+        try:
+            web_driver = webdriver.Chrome(
+                service=ChromeService(ChromeDriverManager().install()),
+                options=options,
+            )
+        except Exception:
+            # Fallback to Selenium Manager if driver-manager download fails.
+            web_driver = webdriver.Chrome(options=options)
 
     web_driver.implicitly_wait(6)
     yield web_driver
