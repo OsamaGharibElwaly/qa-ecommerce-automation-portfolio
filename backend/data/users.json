@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Demo User",
+    "email": "demo@example.com",
+    "password": "password123"
+  },
+  {
+    "id": 2,
+    "name": "abc",
+    "email": "abc@abc.com",
+    "password": "123"
+  },
+  {
+    "id": 3,
+    "name": "QA User",
+    "email": "qa_20260401142929161111@example.com",
+    "password": "StrongPass1"
+  },
+  {
+    "id": 4,
+    "name": "QA User",
+    "email": "qa_20260401143314991256@example.com",
+    "password": "StrongPass1"
+  }
+]

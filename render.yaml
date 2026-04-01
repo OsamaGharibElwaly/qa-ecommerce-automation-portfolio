@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: ecommerce-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm run start
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: FRONTEND_URL
+        value: https://your-frontend.vercel.app,https://your-frontend.netlify.app
+      - key: TOKEN_TTL_SECONDS
+        value: 3600
+      - key: MOCK_ORDER_FAILURE
+        value: false

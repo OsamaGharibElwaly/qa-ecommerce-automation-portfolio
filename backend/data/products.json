@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "description": "Comfortable over-ear wireless headphones with noise isolation.",
+    "price": 89.99,
+    "category": "Electronics",
+    "image": "https://placehold.co/400x300?text=Headphones",
+    "stock": 12
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "description": "Track fitness, heart rate, and notifications on your wrist.",
+    "price": 129.99,
+    "category": "Electronics",
+    "image": "https://placehold.co/400x300?text=Smart+Watch",
+    "stock": 7
+  },
+  {
+    "id": 3,
+    "name": "Running Shoes",
+    "description": "Lightweight running shoes designed for all-day comfort.",
+    "price": 74.5,
+    "category": "Fashion",
+    "image": "https://placehold.co/400x300?text=Running+Shoes",
+    "stock": 0
+  },
+  {
+    "id": 4,
+    "name": "Backpack",
+    "description": "Durable backpack with laptop compartment and water resistance.",
+    "price": 49.99,
+    "category": "Accessories",
+    "image": "https://placehold.co/400x300?text=Backpack",
+    "stock": 20
+  },
+  {
+    "id": 5,
+    "name": "Coffee Maker",
+    "description": "Automatic drip coffee maker with programmable timer.",
+    "price": 64,
+    "category": "Home",
+    "image": "https://placehold.co/400x300?text=Coffee+Maker",
+    "stock": 4
+  },
+  {
+    "id": 6,
+    "name": "Desk Lamp",
+    "description": "LED desk lamp with adjustable brightness and color modes.",
+    "price": 29.99,
+    "category": "Home",
+    "image": "https://placehold.co/400x300?text=Desk+Lamp",
+    "stock": 9
+  }
+]

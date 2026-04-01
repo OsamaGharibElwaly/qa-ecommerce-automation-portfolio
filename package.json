@@ -1,0 +1,16 @@
+{
+  "name": "simple-ecommerce-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "build": "npm run build --prefix frontend",
+    "start": "concurrently \"npm run start --prefix backend\" \"npm run start --prefix frontend\"",
+    "test:backend": "npm run test --prefix backend",
+    "test:frontend:build": "npm run build --prefix frontend",
+    "test:selenium": "python -m pytest selenium-tests/tests --html=selenium-tests/reports/report.html --self-contained-html"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
